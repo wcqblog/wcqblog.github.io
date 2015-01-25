@@ -18,7 +18,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 ###一个使用了着色器的webgl程序的结构###
 
 | 阶段|  名称      |
-|-----|---|
+|---|---|
 |1    |顶点着色器  |
 |2    |片元着色器  |
 |3    |主程序JS代码|
@@ -27,7 +27,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 ####initShader(gl, vshader, fshader)####
 
 | 参数  | 内容     |
-|----|----|
+|---|---|
 |gl     |上下文    |
 |vshader|顶点着色器|
 |fshader|片元着色器|
@@ -49,5 +49,5 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 #####vec4数据类型####
 
 |float|float|float|float|
-|---|--|---|--|
+|---|---|---|---|
 
