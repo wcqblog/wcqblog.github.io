@@ -17,37 +17,22 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 
 ##一个使用了着色器的webgl程序的结构##
 
-|阶段|名称|
-|---|---|
-|1|顶点着色器|
-|2|片元着色器|
-|3|主程序JS代码|
+![图1](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_234943.jpg)
 
 
 ##initShader(gl, vshader, fshader)##
 
-|参数|内容|
-|---|---|
-|gl|上下文|
-|vshader|顶点着色器|
-|fshader|片元着色器|
+![图2](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235117.jpg)
 
 
-|返回值|内容|
-|---|---|
-|true|初始化成功|
-|false|初始化失败|
+![图3](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235138.jpg)
 
 ##顶点着色器内置类型和变量##
 
-|类型 |变量名|描述|
-|---|---|---|
-|vec4 |gl_Position |设定顶点位置(必须要有，否则报错)|
-|float|gl_PointSize|设定顶点大小(可以没有，默认1px大小)|
+![图4](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235151.jpg)
 
 
 ##vec4数据类型##
 
-|float|float|float|float|
-|---|---|---|---|
+![图5](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235207.jpg)
 
