@@ -2,8 +2,8 @@
 layout: post
 title:  "WebGL中的着色器 Shader"
 date:   2015-01-25 18:40:00
-categories: mediator feature
-tags: webgl shader
+categories: WebGL
+tags: 前端 javascript webgl shader 着色器
 image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 ---
 ##WebGL中的着色器 Shader##
@@ -17,22 +17,16 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 
 ##一个使用了着色器的webgl程序的结构##
 
-![图1](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_234943.jpg)
-
-
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_234943.jpg" alt="图1">
 ##initShader(gl, vshader, fshader)##
 
-![图2](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235117.jpg)
-
-
-![图3](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235138.jpg)
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235117.jpg" alt="图2">
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235138.jpg" alt="图3">
 
 ##顶点着色器内置类型和变量##
 
-![图4](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235151.jpg)
-
-
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235151.jpg" alt="图4">
 ##vec4数据类型##
 
-![图5](/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235207.jpg)
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235207.jpg" alt="图5">
 
