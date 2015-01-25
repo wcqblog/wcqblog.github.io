@@ -3,7 +3,7 @@ layout: post
 title:  "有关于我"
 date:   2015-01-25 18:40:00
 permalink: /about/
-image: /assets/iamges/background_image.jpg
+image: /assets/images/background_image.jpg
 ---
 
 #作者相关#
