@@ -6,7 +6,7 @@ categories: mediator feature
 tags: webgl shader
 image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 ---
-##WebGL中的着色器 Shader
+##WebGL中的着色器 Shader##
 
 主要分两种
 > 1. Vertext Shader 顶点着色器
@@ -15,7 +15,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 不过webgl中的顶点着色器和片元着色器都是拼接的字符串。
 
 
-####一个使用了着色器的webgl程序的结构
+##一个使用了着色器的webgl程序的结构##
 
 | 阶段|  名称      |
 |---:|:---|
@@ -24,7 +24,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 |3    |主程序JS代码|
 
 
-####initShader(gl, vshader, fshader)
+##initShader(gl, vshader, fshader)##
 
 | 参数  | 内容     |
 |---:|:---|
@@ -38,7 +38,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 |true   |初始化成功|
 |false  |初始化失败|
 
-####顶点着色器内置类型和变量
+##顶点着色器内置类型和变量##
 
 |类型 |变量名      | 描述                                |
 |---:|:---:|:---|
@@ -46,7 +46,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 |float|gl_PointSize|设定顶点大小（可以没有，默认1px大小）|
 
 
-####vec4数据类型
+##vec4数据类型##
 
 |float|float|float|float|
 |---|---|---|---|
