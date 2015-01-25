@@ -2,11 +2,11 @@
 layout: post
 title:  "WebGL中的着色器 Shader"
 date:   2015-01-25 18:40:00
-categories: jekyll update
-tags: featured
-image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
+categories: mediator feature
+tags: webgl shader
+image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 ---
-##WebGL中的着色器 Shader
+#WebGL中的着色器 Shader
 
 主要分两种
 >1. Vertext Shader 顶点着色器
@@ -15,7 +15,7 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
 不过webgl中的顶点着色器和片元着色器都是拼接的字符串。
 
 
-####一个使用了着色器的webgl程序的结构
+##一个使用了着色器的webgl程序的结构
 
 | 阶段 |  名称 |
 |:-----:|:-------:|
