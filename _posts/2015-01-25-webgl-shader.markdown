@@ -17,16 +17,16 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 
 ##一个使用了着色器的webgl程序的结构##
 
-<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_234943.jpg" alt="图1">
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_234943.jpg">
 ##initShader(gl, vshader, fshader)##
 
-<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235117.jpg" alt="图2">
-<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235138.jpg" alt="图3">
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235117.jpg">
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235138.jpg">
 
 ##顶点着色器内置类型和变量##
 
-<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235151.jpg" alt="图4">
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235151.jpg">
 ##vec4数据类型##
 
-<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235207.jpg" alt="图5">
+<img src="/assets/article_images/2015-01-25-webgl-shader/2015-01-25_235207.jpg">
 
