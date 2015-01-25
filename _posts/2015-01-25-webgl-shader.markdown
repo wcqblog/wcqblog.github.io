@@ -4,7 +4,7 @@ title:  "WebGL中的着色器 Shader"
 date:   2015-01-25 18:40:00
 categories: WebGL
 tags: 前端 javascript webgl shader 着色器
-image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
+image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
 ##WebGL中的着色器 Shader##
 
