@@ -18,7 +18,7 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 ##一个使用了着色器的webgl程序的结构##
 
 | 阶段|  名称      |
-|---:|:---|
+|---|---|
 |1    |顶点着色器  |
 |2    |片元着色器  |
 |3    |主程序JS代码|
