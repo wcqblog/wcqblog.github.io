@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "WebGL中的着色器 Shader"
 date:   2015-01-25 18:40:00
@@ -45,4 +45,4 @@ image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 
 #####vec4数据类型
 |float|float|float|float|
-|-----|:---:|:---:|:---:|
+|-----|:---:|:---:|----:|
