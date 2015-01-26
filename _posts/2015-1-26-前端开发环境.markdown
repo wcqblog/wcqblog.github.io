@@ -9,27 +9,36 @@ image: /assets/article_images/angular/angular.jpg
 ##技术选型:前端开发环境##
 ###前端开发环境：
 1.代码编辑工具<br>
+> 选择１：**Sublime text**
+>> Emmet //神器不解释<br>
+>> [jQuery Package for Sublime Text]https://github.com/SublimeText/jQuery/
+>> AngularJS package for sublime Text
+>> ConvertToUTF8 (解决编码问题)
+
+> 选择２：**WebStorm 9**
+>> 基本集成了常用插件库...无比炫酷，还是跨平台的，内存够大的首选
+
 2.断点调试工具<br>
 > Chrome 插件*Batarang*，主要用来做针对AngularJS的调试 (可以尝试)
 
 3.版本管理工具<br>
-> 采用代码托管*git*，主要是托管在GitHub上，采用pull request (确定使用)
+> 采用代码托管**git**，主要是托管在GitHub上，采用pull request (确定使用)
 
 4.代码合并和混淆工具<br>
-> 使用node.js上的神器 *grunt* (确定使用)
->>   *concat*用来合并文件<br>
->>   *uglyfy*用来混淆代码<br>
->>   *watch*用来监控文件变化<br>
+> 使用node.js上的神器 **grunt** (**确定使用**)
+>>   **concat**用来合并文件<br>
+>>   **uglyfy**用来混淆代码<br>
+>>   **watch**用来监控文件变化<br>
 > grunt配置:对gruntfile的配置
 
 5.依赖管理工具<br>
-> [Bower](http://bower.io): A package manager for the web (可以尝试)
+> [**Bower**](http://bower.io): A package manager for the web (可以尝试)
 >>  自动安装依赖组件<br>
 >>  组件的依赖检测<br>
 >>  版本兼容性自动检测<br>
 
 6.单元测试工具<br>
-> [http-server](https://github.com/nodeapps/http-server):一个轻量级的服务器 (确定使用)
+> [**http-server**](https://github.com/nodeapps/http-server):一个轻量级的服务器 (**确定使用**)
 >>可以将任意目录模拟为本地的服务器目录,方便我们使用它进行数据伪造和测试
 
 > 单元测试runner：[karma](http://karma-runner.github.io/)(可以尝试)
