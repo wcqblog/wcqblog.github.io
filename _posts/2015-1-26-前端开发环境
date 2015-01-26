@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "技术选型:前端开发环境"
+date:   2015-01-26 18:30
+categories: AngularJS Node.js 前端自动化流 
+tags: Webfrontend projects
+image: /assets/article_images/angular/angular.jpg
+---
+##技术选型:前端开发环境##
+###前端开发环境：
+1.代码编辑工具<br>
+2.断点调试工具<br>
+3.版本管理工具<br>
+4.代码合并和混淆工具<br>
+5.依赖管理工具<br>
+6.单元测试工具<br>
+7.集成测试工具<br>
