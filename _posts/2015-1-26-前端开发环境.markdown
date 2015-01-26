@@ -10,30 +10,32 @@ image: /assets/article_images/angular/angular.jpg
 ###前端开发环境：
 1.代码编辑工具<br>
 2.断点调试工具<br>
-> Chrome 插件*Batarang*，主要用来做针对AngularJS的调试
+> Chrome 插件*Batarang*，主要用来做针对AngularJS的调试 (可以尝试)
 
 3.版本管理工具<br>
-> 采用代码托管*git*，主要是托管在GitHub上，采用pull request
+> 采用代码托管*git*，主要是托管在GitHub上，采用pull request (确定使用)
 
 4.代码合并和混淆工具<br>
-> 使用node.js上的神器 *grunt*
+> 使用node.js上的神器 *grunt* (确定使用)
 >>   *concat*用来合并文件<br>
 >>   *uglyfy*用来混淆代码<br>
 >>   *watch*用来监控文件变化<br>
 > grunt配置:对gruntfile的配置
 
 5.依赖管理工具<br>
-> [Bower](http://bower.io): A package manager for the web
+> [Bower](http://bower.io): A package manager for the web (可以尝试)
 >>  自动安装依赖组件<br>
 >>  组件的依赖检测<br>
 >>  版本兼容性自动检测<br>
 
 6.单元测试工具<br>
-> [http-server](https://github.com/nodeapps/http-server):一个轻量级的服务器
+> [http-server](https://github.com/nodeapps/http-server):一个轻量级的服务器 (确定使用)
 >>可以将任意目录模拟为本地的服务器目录,方便我们使用它进行数据伪造和测试
 
-> 单元测试runner：[karma](http://karma-runner.github.io/)<br>
-> 单元测试工具:[Jasmine](http://jasmine.github.io/)，可以用来编写单元测试用例<br>
+> 单元测试runner：[karma](http://karma-runner.github.io/)(可以尝试)
+>>*karma coverage，运行测试检查代码覆盖
+
+> 单元测试工具:[Jasmine](http://jasmine.github.io/)，可以用来编写单元测试用例(可以尝试)
 >> 四核心概念:分组、用例、期望、匹配
 
 ```Javascript
@@ -44,5 +46,6 @@ image: /assets/article_images/angular/angular.jpg
 ```
 
 
-
 7.集成测试工具<br>
+> 专门测试AngularJS用的框架[Protractor](https://github.com/angular/protractor) (可以尝试)
+>> 基于WebDriverJS,直接调用浏览器接口进行模拟测试
