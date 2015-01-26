@@ -20,11 +20,10 @@ image: /assets/article_images/angular/angular.jpg
 >>   *concat*用来合并文件
 >>   *uglyfy*用来混淆代码
 >>   *watch*用来监控文件变化
-
 > grunt配置:对gruntfile的配置
 
 5.依赖管理工具<br>
-> *[Bower]*(http://bower.io): A package manager for the web
+> [Bower](http://bower.io): A package manager for the web
 >>   自动安装依赖组件
 >>   组件的依赖检测
 >>   版本兼容性自动检测
