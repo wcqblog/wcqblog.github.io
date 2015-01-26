@@ -41,9 +41,7 @@ layout: default
               <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
               <div>
                 标签:
-                {% for tags in post %}
-                <span>{{ post.tags }}</span>
-                {% endfor %}
+                <span>{{ post.categories }}</span>
               </div>
             </header>
             <section class="post-excerpt" itemprop="description">
