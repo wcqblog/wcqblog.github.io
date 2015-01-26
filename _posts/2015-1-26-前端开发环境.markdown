@@ -24,16 +24,16 @@ image: /assets/article_images/angular/angular.jpg
 
 5.依赖管理工具<br>
 > [Bower](http://bower.io): A package manager for the web
->>   自动安装依赖组件
->>   组件的依赖检测
->>   版本兼容性自动检测
+>>  自动安装依赖组件<br>
+>>  组件的依赖检测<br>
+>>  版本兼容性自动检测<br>
 
 6.单元测试工具<br>
 > [http-server](https://github.com/nodeapps/http-server):一个轻量级的服务器
 >>可以将任意目录模拟为本地的服务器目录,方便我们使用它进行数据伪造和测试
 
-> 单元测试runner：[karma](http://karma-runner.github.io/)
-> 单元测试工具:[Jasmine](http://jasmine.github.io/)，可以用来编写单元测试用例
+> 单元测试runner：[karma](http://karma-runner.github.io/)<br>
+> 单元测试工具:[Jasmine](http://jasmine.github.io/)，可以用来编写单元测试用例<br>
 >> 四核心概念:分组、用例、期望、匹配
 
 ```Javascript
