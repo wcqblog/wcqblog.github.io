@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "浏览器内部工作原理"
-date:   2015-01-26 16:57
+title:  "Angular应用的E2E测试框架：Protractor"
+date:   2015-01-26 17:13
 categories: AngularJS 测试 Protractor 
 tags: Webfrontend projects
 image: /assets/article_images/angular/angular.jpg
