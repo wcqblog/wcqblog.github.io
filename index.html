@@ -30,11 +30,11 @@ layout: default
 
 <main class="content" role="main">
 
-    {% if site.categories.Webfrontend %}
-    <h5 class="index-headline featured"><span>Web前端</span></h5>
+    {% if site.tags.Webfrontend %}
+    <h3 class="index-headline featured"><span>Web前端</span></h5>
 
     <div class="container featured">
-      {% for post in site.categories.Webfrontend %}
+      {% for post in site.tags.Webfrontend %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
