@@ -2,8 +2,8 @@
 layout: post
 title:  "WebGL中的着色器 Shader"
 date:   2015-01-25 18:40:00
-categories: Webfrontend
-tags:  前端 JavaScript webgl shader 着色器
+tags: Webfrontend
+categories:  前端 JavaScript webgl shader 着色器
 image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
 ###WebGL中的着色器 Shader
