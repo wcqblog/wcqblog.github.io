@@ -17,9 +17,9 @@ image: /assets/article_images/angular/angular.jpg
 
 4.代码合并和混淆工具<br>
 > 使用node.js上的神器 *grunt*
->>   *concat*用来合并文件
->>   *uglyfy*用来混淆代码
->>   *watch*用来监控文件变化
+>>   *concat*用来合并文件<br>
+>>   *uglyfy*用来混淆代码<br>
+>>   *watch*用来监控文件变化<br>
 > grunt配置:对gruntfile的配置
 
 5.依赖管理工具<br>
@@ -29,4 +29,20 @@ image: /assets/article_images/angular/angular.jpg
 >>   版本兼容性自动检测
 
 6.单元测试工具<br>
+> [http-server](https://github.com/nodeapps/http-server):一个轻量级的服务器
+>>可以将任意目录模拟为本地的服务器目录,方便我们使用它进行数据伪造和测试
+
+> 单元测试runner：[karma](http://karma-runner.github.io/)
+> 单元测试工具:[Jasmine](http://jasmine.github.io/)，可以用来编写单元测试用例
+>> 四核心概念:分组、用例、期望、匹配
+
+```Javascript
+  describe(string,function)//表示分组，也就是一组用例
+  it(string,function)//表示测试用例
+  expect(expression)//表示期望expression这个表达式具有某个值或某种行为
+  to***(arg)//表示匹配
+```
+
+
+
 7.集成测试工具<br>
