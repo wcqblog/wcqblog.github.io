@@ -2,9 +2,9 @@
 layout: post
 title:  "有关于我"
 date:   2015-01-26 0:55:00
-categories: 关于作者
+categories: 王春琪 WunGCQ
 permalink: /about/
-tags: 前端 javascript 王春琪 WunGCQ
+tags: Life
 image: /assets/images/background_image.jpg
 ---
 
