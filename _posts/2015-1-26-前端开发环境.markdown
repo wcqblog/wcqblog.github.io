@@ -11,18 +11,18 @@ image: /assets/article_images/angular/angular.jpg
 1.代码编辑工具<br>
 > 选择１：**Sublime text**
 >> Emmet //神器不解释<br>
->> [jQuery Package for Sublime Text](https://github.com/SublimeText/jQuery/)
->> AngularJS package for sublime Text
+>> [jQuery Package for Sublime Text](https://github.com/SublimeText/jQuery/)<br>
+>> AngularJS package for sublime Text <br>
 >> ConvertToUTF8 (解决编码问题)
 
 > 选择２：**WebStorm 9**
 >> 基本集成了常用插件库...无比炫酷，还是跨平台的，内存够大的首选
 
 2.断点调试工具<br>
-> Chrome 插件*Batarang*，主要用来做针对AngularJS的调试 (可以尝试)
+> Chrome 插件**Batarang**，主要用来做针对AngularJS的调试 (可以尝试)
 
 3.版本管理工具<br>
-> 采用代码托管**git**，主要是托管在GitHub上，采用pull request (确定使用)
+> 采用代码托管**git**，主要是托管在GitHub上，采用pull request (**确定使用**)
 
 4.代码合并和混淆工具<br>
 > 使用node.js上的神器 **grunt** (**确定使用**)
