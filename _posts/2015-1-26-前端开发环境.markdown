@@ -10,8 +10,24 @@ image: /assets/article_images/angular/angular.jpg
 ###前端开发环境：
 1.代码编辑工具<br>
 2.断点调试工具<br>
+> Chrome 插件*Batarang*，主要用来做针对AngularJS的调试
+
 3.版本管理工具<br>
+> 采用代码托管*git*，主要是托管在GitHub上，采用pull request
+
 4.代码合并和混淆工具<br>
+> 使用node.js上的神器 *grunt*
+>>   *concat*用来合并文件
+>>   *uglyfy*用来混淆代码
+>>   *watch*用来监控文件变化
+
+> grunt配置:对gruntfile的配置
+
 5.依赖管理工具<br>
+> *[Bower]*(http://bower.io): A package manager for the web
+>>   自动安装依赖组件
+>>   组件的依赖检测
+>>   版本兼容性自动检测
+
 6.单元测试工具<br>
 7.集成测试工具<br>
