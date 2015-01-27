@@ -10,9 +10,16 @@ image: /assets/article_images/angular/angular.jpg
 
 ##*几个注意点*##
 > 不要试图去复用Controller,一个控制器一般只负责控制一小块视图
+
 > 不要在Controller中操作dom，这不是Controller的职责
-> 不要在Controller中
-> 不要在Controller中
+
+> 不要在Controller中做数据格式化, ng有很好的表单控件
+
+> 不要在Controller中做数据过滤操作，ng有filter服务
+
+> 一般来说Controller不会互相调用，Controller的交互通过事件进行
+
+
 
 ```HTML
   <!DOCTYPE HTML>
