@@ -7,9 +7,14 @@ tags: projects
 image: /assets/article_images/angular/angular.jpg
 ---
 ##项目可以考虑的几个UI,代码已GET##
+> vanilla-cream-css主题,比较素净,很有意思
 ![ vanilla-cream-css主题,比较素净,很有意思](/assets/article_images/UI备选/vanilla-cream-css.jpg ) 
+>  modern-touch-css主题,我比较中意的一个
 ![ modern-touch-css主题,我比较中意的一个](/assets/article_images/UI备选/modern-touch-css.jpg) 
+> funky-tunes-css主题,扁平+模糊背景半透明，满满的APP范
 ![ funky-tunes-css主题,扁平+模糊背景半透明，满满的APP范](/assets/article_images/UI备选/funky-tunes-css.jpg) 
+> city-break主题, 中规中矩
 ![city-break主题, 中规中矩](/assets/article_images/UI备选/city-break-css.jpg)
+> metro-vibes-css主题,挺好看的,就是配图有点低龄向，其实换了图能好很多
 ![metro-vibes-css主题,挺好看的,就是配图有点低龄向，其实换了图能好很多 ](/assets/article_images/UI备选/metro-vibes-css.jpg)
 **欢迎在评论中添砖java~~**
