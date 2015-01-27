@@ -3,7 +3,7 @@ layout: post
 title:  "UI模板(代码已GET)"
 date:   2015-01-27 18:37
 categories: UI
-tags: projects
+tags: Webfrontend projects
 image: /assets/article_images/angular/angular.jpg
 ---
 ##项目可以考虑的几个UI,代码已GET##
