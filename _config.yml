@@ -17,7 +17,7 @@ name: 'WunGCQ 王春琪'
 author: 'WunGCQ 王春琪'
 author_image: "/assets/images/author.jpg"
 
-#paginate:	5
+paginate:	65535
 
 url: "http://wcqblog.github.io" # the base hostname & protocol for your site
 baseurl: ""
