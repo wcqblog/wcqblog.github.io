@@ -8,6 +8,12 @@ image: /assets/article_images/angular/angular.jpg
 ---
 #AngularJS中的Controller
 
+##*几个注意点*##
+> 不要试图去复用Controller,一个控制器一般只负责控制一小块视图
+> 不要在Controller中操作dom，这不是Controller的职责
+> 不要在Controller中
+> 不要在Controller中
+
 ```HTML
   <!DOCTYPE HTML>
 <html lang="zh-cn" ng-app>
