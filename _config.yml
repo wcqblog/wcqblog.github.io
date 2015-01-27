@@ -5,7 +5,7 @@ highlighter: pygments
 # Site settings
 title: "WunGCQ的博客"
 description: > # this means to ignore newlines until "email:"
-   荒原 - WunGCQ的博客
+   荒原 - 王春琪的博客
 
 email: wangchunqibuaa@163.com
 #blog logo
@@ -17,7 +17,7 @@ name: 'WunGCQ 王春琪'
 author: 'WunGCQ 王春琪'
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+#paginate:	5
 
 url: "http://wcqblog.github.io" # the base hostname & protocol for your site
 baseurl: ""
