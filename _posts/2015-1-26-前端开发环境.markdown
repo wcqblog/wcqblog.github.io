@@ -58,3 +58,6 @@ image: /assets/article_images/angular/angular.jpg
 7.集成测试工具<br>
 > 专门测试AngularJS用的框架[Protractor](https://github.com/angular/protractor) (可以尝试)
 >> 基于WebDriverJS,直接调用浏览器接口进行模拟测试
+
+
+###目前的前端技术选型的开发组件也已经基本找齐，please click [传送门](http://wcqblog.github.io/angularjs/ui-router/bootstrap%E2%80%94theme/phukoj/2015/01/28/phukOJ-front-end.html) to take a look~ ###
