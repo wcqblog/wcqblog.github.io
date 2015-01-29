@@ -3,7 +3,7 @@ layout: post
 title:  "AngularJS:构建项目"
 date:   2015-01-29 21:40
 categories: AngularJS 项目初始化 
-tags: Webfrontend　AngularJS
+tags: Webfrontend
 image: /assets/article_images/angular/angular.jpg
 ---
 ##构建AngularJS项目的几种方式##
