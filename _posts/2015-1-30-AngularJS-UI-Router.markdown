@@ -15,17 +15,28 @@ image: /assets/article_images/angular/angular.jpg
 ###开始使用###
 1.安装
 
-Bower：    ``` $ bower install angular-ui-router ``` <br>
-npm:       ``` $ npm install angular-ui-router ``` <br>
-Component: ``` $ Component install angular-ui/ui-router ``` <br>
+Bower：   
+
+``` $ bower install angular-ui-router ``` <br>
+
+npm:      
+
+``` $ npm install angular-ui-router ``` <br>
+
+Component: 
+
+``` $ Component install angular-ui/ui-router ``` <br>
 
 2.引入文件
 
-在页面引入　```<script src="js/angular-ui-router.js"></script>``` <br>
+在页面引入　
+
+```<script src="js/angular-ui-router.js"></script>``` <br>
 
 3.加入模块
-```javascript
 在模块里加入ui.router
+
+```javascript
 var MyApp = angular.module('myApp', [
   'myApp.filters',
   'myApp.services',
