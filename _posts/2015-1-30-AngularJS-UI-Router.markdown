@@ -43,7 +43,7 @@ var MyApp = angular.module('myApp', [
   'myApp.directives',
   'myApp.controllers',
   'ngRoute',        //这里的ngRoute模块AngularJS自身的路由模块
-  ‘ui.router’       //这是ui-router
+  'ui.router'       //这是ui-router
 ]);
 ```
 
