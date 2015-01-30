@@ -6,7 +6,7 @@ categories: AngularJS UI-Router
 tags: Webfrontend projects
 image: /assets/article_images/angular/angular.jpg
 ---
-<br>
+
 ##AngularJS的UI Router 插件##
 > Angular UI Router时一个AngularJS的路由插件，你可以使用这个框架来组织你的页面
 ><br>
