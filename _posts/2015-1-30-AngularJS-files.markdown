@@ -18,7 +18,7 @@ image: /assets/article_images/angular/angular.jpg
 <br>
 
 ###问题解决:Failed to instantiate module [$injector:unpr] Unknown provider: $routeProvider###
-在stackoverflow上面查到的,主要原因是,在AngularJS 1.2之后route模块已经不在angularJS的核心模块了,所以需要加载Angular-route.js
+在stackoverflow上面查到的,主要原因是,在AngularJS 1.2之后route模块已经不在angularJS的核心模块了,所以需要加载Angular-route.js，并且在模块初始化函数种添加ngRoute模块
 ```html
   <script src="lib/angular/angular-route.min.js"></script>  
 ```
