@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AngularJS的UI Router 插件
-date: 2015-01-30 13:55
+date: 2015-01-30 17:07
 categories: AngularJS UI-Router
 tags: Webfrontend projects
 image: /assets/article_images/angular/angular.jpg
