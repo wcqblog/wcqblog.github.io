@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "原生js对页面元素的样式操作"
-date:   2015-02-04 13:30:00
+date:   2015-2-4 13:30:00
 categories: 前端 javascript 浏览器 
 tags: Webfrontend 
 image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
