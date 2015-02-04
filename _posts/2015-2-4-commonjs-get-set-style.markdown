@@ -14,7 +14,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 > 注意，这里的elem是node，即document.getElem***()返回的节点
 
 这里还是要区分浏览器内核的
-### ie注定天生与众不同
+### ie注定天生与众不同 ###
 不过IE10以上对于自身的和标准写法都支持了
 
 ```javascript
@@ -26,7 +26,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
   var attrStyleOfElem = elem.currentStyle[attr];
 ```
 
-### 再看看W3C标准
+### 再看看W3C标准 ###
 
 ```javascript
   //attr这里不是驼峰的了！ margin-top 这样就OK
@@ -34,11 +34,12 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
   //我去好长好长。。。
 ```
 
-### 再来说一下设置样式 
+### 再来说一下设置样式 ####
 
+```javascript
 
-```javascrpit
+//最终这些样式就是标签内的 style属性的值！
   var attrString = "margin-top: 20px; padding: 10px 0;"
   elem.style.cssText = attrString;
-  //最终这些样式就是标签内的 style属性的值！
+  
 ```
