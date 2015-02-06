@@ -47,7 +47,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ###最后送上一点福利，自己手动扩展了一下Node对象，支持elem._css()获取和设置样式###
 ###而且还支持链式写法哦~###
 
-```javscript
+```javascript
 //扩展 css
 //有时间再扩展一下对象数组的写法
 Node.prototype._css = function(attr,value){
