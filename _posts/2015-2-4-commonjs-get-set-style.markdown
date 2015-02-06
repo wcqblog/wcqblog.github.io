@@ -80,7 +80,7 @@ Node.prototype._css = function(attr,value){
 //获取width属性
 var elem =  document.getElementsById('elem');
 var width = elem.css("width");
-设置elem元素的高度和背景颜色
+//设置elem元素的高度和背景颜色
 elem.css("height",width).css("background-color","#369");
 ```
 
