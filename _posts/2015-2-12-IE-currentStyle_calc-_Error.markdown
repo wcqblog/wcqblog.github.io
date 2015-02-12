@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IE对于calc()样式的currentStyle的解析问题"
+title:  "CSS calc() 以及IE的currentStyle的对百分比CSS解析问题"
 date:   2015-2-12 13:30:00
 categories: 前端 javascript 浏览器 耿直的IE  _css() calc
 tags: Webfrontend 
@@ -52,4 +52,11 @@ so。。CSS3加入了calc()
     margin: 90px;
   }
 ```
-不过比较难过的是:IE9以下版本的IE不支持defaultView.getComputedStyle，而IE自己的currentStyle都特别耿直，百分比的样式只是取出来，并不管计算，所以常用的百分比样式需要你取到其父元素的innerHeight/innerWdith等属性再乘以你取出的百分比(用js取，不是用css)，这里是需要特别注意的。
+不过比较难过的是:IE9以下版本的IE不支持docment.defaultView.getComputedStyle，而IE自己的currentStyle都特别耿直，百分比的样式只是取出来，并不管计算，所以常用的百分比样式需要你取到其父元素的innerHeight/innerWdith等属性再乘以你取出的百分比(用js取，不是用css)，这里是需要特别注意的。
+
+W3C真的是码农的救星啊
+不过天朝将近10%的IE8占有率真是虐心。。世界平均才1%多一点...光这些就能够气死中国的开发者了。心塞。
+####你问我有森么建议####
+不要再去兼容了。。。
+
+优雅降级虐哭我=_=。
