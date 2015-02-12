@@ -70,7 +70,7 @@ Node.prototype._css = function(attr,value){
             return document.defaultView.getComputedStyle(this,null).getPropertyValue(attr);
         }else if(this.currentStyle){
             //IE下获取CSS属性最终样式(同于CSS优先级)
-            return this.currentStyle[attr];
+            return this.currentStyle.getpropertyValue(attr);
         }else{
             return null;
         }
