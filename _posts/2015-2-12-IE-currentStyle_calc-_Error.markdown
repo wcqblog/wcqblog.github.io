@@ -52,7 +52,11 @@ so。。CSS3加入了calc()
     margin: 90px;
   }
 ```
-不过比较难过的是:IE9以下版本的IE不支持docment.defaultView.getComputedStyle，而IE自己的currentStyle都特别耿直，百分比的样式只是取出来，并不管计算，所以常用的百分比样式需要你取到其父元素的innerHeight/innerWdith等属性再乘以你取出的百分比(用js取，不是用css)，这里是需要特别注意的。
+不过比较难过的是:IE9以下版本的IE不支持docment.defaultView.getComputedStyle，而IE自己的currentStyle都特别耿直，百分比的样式只是取出来，并不管计算，
+> 所以常用的百分比样式需要你取到其父元素的innerHeight/innerWdith等属性再乘以你取出的百分比(用js取，不是用css)，这里是需要特别注意的。
+>> 时候又去翻了翻资料，看到了张鑫旭的这篇 [link](http://www.zhangxinxu.com/wordpress/2012/05/getcomputedstyle-js-getpropertyvalue-currentstyle/)
+里边提到了currentStyle.getPropertyValue(attr)可以实现计算结果。
+所以我修改了一下我的另一篇文章中的<a href="http://wcqblog.github.io/%E5%89%8D%E7%AB%AF/javascript/%E6%B5%8F%E8%A7%88%E5%99%A8/node.prototype%E6%89%A9%E5%B1%95/_css()/2015/02/04/commonjs-get-set-style.html">_css()函数的实现</a>中的代码，来实现更大程度的兼容。
 
 W3C真的是码农的救星啊
 不过天朝将近10%的IE8占有率真是虐心。。世界平均才1%多一点...光这些就能够气死中国的开发者了。心塞。
