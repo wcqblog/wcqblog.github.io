@@ -8,9 +8,9 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
 ##寒假很快就要过去了好不甘心啊
 
-为啥我寒假一开始更了挺多博客后来不更了？因为。。。我在做两个项目，还要忙着过年=_=
+为啥我寒假一开始更了挺多博客后来不更了？因为。。。我在做两个项目，还要忙着过年
 一个智慧校园，我就不多说了，本来处于磨练意志坚持不用jquery和插件，不过被大得吓人的需求震慑到了，先写了两个页面，一个[登陆页面](http://wungcq.github.io/static/templates/login.html)（视频背景，卡片翻转，还挺炫酷昂），一个[功能页面](http://wungcq.github.io/static/templates/index.html)，徒手撸了一个周历控件，一个滚动条控件，还有一个备忘录的控件，累感不爱。
-考虑到OJ那面比较要紧，就先写写OJ的东西磨练一下意志吧=_=。经过两星期的开发，也算是基本处于可控的状态了~噢耶~
+考虑到OJ那面比较要紧，就先写写OJ的东西磨练一下意志吧。经过两星期的开发，也算是基本处于可控的状态了~噢耶~
 
 这是OJ-frontend的github链接，求多来[打脸](https://github.com/WunGCQ/OJ-frontend)
 
