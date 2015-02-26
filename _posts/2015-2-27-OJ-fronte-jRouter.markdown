@@ -4,7 +4,7 @@ title:  "说一下我为什么这些天都没更新因为我在造轮子写个�
 date:   2015-02-27 1:10:00
 categories: 前端 javascript html5 单页web应用 路由
 tags: Webfrontend projects
-image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
+image: /assets/article_images/dota/fxjj.jpg
 ---
 ##寒假很快就要过去了好不甘心啊
 
