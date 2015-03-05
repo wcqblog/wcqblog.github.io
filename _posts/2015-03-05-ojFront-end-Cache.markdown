@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "OJ前端的各种缓存使用"
+title:  "phukOJ前端的各种缓存使用"
 date:   2015-3-5 16:06:00
 categories: 前端 javascript 异步ajax 同步ajax localStorage OJ
 tags: Webfrontend projects
