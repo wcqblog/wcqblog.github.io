@@ -34,6 +34,6 @@ image: /assets/images/background_image.jpg
 
   8. 北航Online Juge的前端，根据业务需要自己开发了一个简单轻便的前端路由框架jRouter，使用historyAPI，已经开发完核心内容，正在完善MVC部分和业务内容。（所有前端内容，参与文档，commonJS，没有外部依赖）[github地址](https://github.com/WunGCQ/OJ-frontend/)  [演示地址](http://wungcq.github.io/public/templates/index.html)
   
-  9. 北航的智慧校园重构项目，主要使用commonJS，开发组件为主，基本没有外部依赖。演示地址: [功能页，周历组件，日程，瀑布流，滚动条控件](http://wungcq.github.io/static/templates/index.html/)  ,  [登陆页，视频背景,卡片切换](http://wungcq.github.io/static/templates/login.html/)
+  9. 北航的智慧校园重构项目，主要使用commonJS，开发组件为主，基本没有外部依赖。演示地址: [功能页，周历组件，日程，瀑布流，滚动条控件](http://wungcq.github.io/static/templates/index.html)  ,  [登陆页，视频背景,卡片切换](http://wungcq.github.io/static/templates/login.html)
 
 
