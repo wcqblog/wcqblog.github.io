@@ -17,6 +17,9 @@ image: /assets/images/background_image.jpg
 在新浪微博
  [@WunGCQ](http://weibo.com/wangchunqi)
  
+ 简历
+  [点击查看](http://wungcq.github.io/img/wangchunqi-web-frontend.pdf)
+ 
 项目经历（按照时间排序）：
   1. 在线工单系统（pyrite开发的企业内部系统，主要是仿真的响应式表单，所有前端）
   
@@ -29,8 +32,8 @@ image: /assets/images/background_image.jpg
   5. 我的个人主页（响应式 + 设计+ 实现 + P图） [链接](http://wungcq.github.io/)
   
   6. 课程设计 一个医院预约系统，ROR后端，coffee + commonJS 开发(所有前端，部分后端，参与文档)  [HotReg](https://github.com/wanzysky/HotReg/)
- 
-  7.特准客广告投放管理系统 部分组件（组件开发+bootstrap主题修改）
+
+  7. 特准客广告投放管理系统 部分组件（组件开发+bootstrap主题修改）
 
   8. 北航Online Juge的前端，根据业务需要自己开发了一个简单轻便的前端路由框架jRouter，使用historyAPI，已经开发完核心内容，正在完善MVC部分和业务内容。业务本身也采用了多种缓存策略，比如localStroage，以及针对ls缓存的离线版本控制（所有前端内容，参与文档，原生JS，没有外部依赖）[github地址](https://github.com/WunGCQ/OJ-frontend/)  [演示地址](http://wungcq.github.io/public/templates/index.html)
   
