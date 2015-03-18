@@ -7,6 +7,9 @@ tags: Webfrontend projects
 image: /assets/article_images/dota/fxjj.jpg
 ---
 ##水水的万年历插件
+
+![看看月历长什么样吧](/assets/article_images/jsplugins/month_calendar.png)
+
 ###很常见了，直接上代码
 
 >html代码结构
