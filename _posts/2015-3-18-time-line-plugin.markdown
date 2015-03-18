@@ -13,7 +13,7 @@ image: /assets/article_images/dota/fxjj.jpg
 ###这是个时间轴插件，按照设计师的想法，比较复杂，根据鼠标移动会发生变化，纵向排列。一个个圆圈串起来的~
 写起来还是蛮麻烦的，而且现在是没有动画版本的。
 以后写个canvas版本的吧。
-
+![看看时间轴长什么样吧](/assets/article_images/jsplugins/time_line.png)
 ###上代码吧。。
 
 >网页代码
