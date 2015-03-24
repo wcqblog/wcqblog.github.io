@@ -23,7 +23,7 @@ OJ上用到的一些内容，当然是因为用了restify的缘故，API服务�
 
 
 
-``` shell
+```
     server {
         listen 8080 default_server; 
         listen [::]:8080 default_server ipv6only=on;#监听8080端口
