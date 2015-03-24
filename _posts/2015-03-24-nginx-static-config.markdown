@@ -3,7 +3,7 @@ layout: post
 title:  "关于一些nginx的静态文件配置"
 date:   2015-03-24 15:30:00
 categories: nginx OJ 
-tags: Projects
+tags: Webfrontend projects
 image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
 
@@ -23,7 +23,7 @@ OJ上用到的一些内容，当然是因为用了restify的缘故，API服务�
 
 
 
-``` ruby
+``` shell
     server {
         listen 8080 default_server; 
         listen [::]:8080 default_server ipv6only=on;#监听8080端口
