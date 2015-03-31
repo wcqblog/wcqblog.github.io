@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "python 读入csv并操作输出"
+date:   2015-03-31 22:30
+categories: python CSV 
+tags: Webfrontend 
+image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
+---
+
+因为做点东西的需要，所以搞了一些天气数据，可惜并不是所有内容都是我想要的，有很大部分是冗余的，会影响读取数据的速度，所以就简单写了一个程序处理一下，因为CSV只是逐行读取的，所以删除列还是很讨厌的操作。。
+
+
+```python
+#coding: utf-8
+import os
+import csv
+
+
+def  removeAll(path) :
+	for root, dirs, files in os.walk( path ):
+		for fn in files
+			removeColCSV(fn)
+
+def removeColCSV(csvfile) :
+	if csvfile.find('_all') !=  -1 :
+		newCSVName = csvfile.split('_')[2] 
+		c = file(newCSVName,'wb')
+		cToRead = file(csvfile,'rb')
+		reader = csv.reader(cToRead)
+		writer = csv.writer(c)
+		writer.writerow('date','hour','type','dongsi')
+		counter = 0
+		writeData = []
+		for line in reader :
+			counter++
+			if counter % 5 == 1 or counter%5 == 2 :
+				writeData.append((line[0],line[1],line[2],line[3]))
+		
+		cToRead.close()
+		writer.writerows(writeData)
+		c.close()
+		
+```		
