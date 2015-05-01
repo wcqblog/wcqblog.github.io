@@ -343,7 +343,7 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
-.mySelect.hover .selected:focus + .selectedReverse {
+.mySelect.hover .selected:hover + .selectedReverse {
 	top: 0;
 	outline: none;
 }
