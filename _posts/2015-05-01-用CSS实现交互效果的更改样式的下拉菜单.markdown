@@ -159,7 +159,7 @@ overflow: auto;
 	outline: none;
 }
 
-.mySelect .selectedReverse:focus + .selectList {
+.mySelect.focus .selectedReverse:focus + .selectList {
 	disply:none !important;
 }
 .mySelect .selectedReverse:focus {
@@ -309,12 +309,13 @@ overflow: auto;
 .mySelect .selected:focus + * + .selectList{
   display: block;
 }
+
 .mySelect .selected:focus + .selectedReverse {
 	top: 0;
 	outline: none;
 }
 
-.mySelect .selectedReverse:focus + .selectList {
+.mySelect.focus .selectedReverse:focus + .selectList {
 	disply:none !important;
 }
 .mySelect .selectedReverse:focus {
