@@ -280,10 +280,10 @@ overflow: auto;
     display: none;
 }
 
-.mySelect .selected:focus + .selectList{
+.mySelect .selected:focus + * + .selectList{
   display: block;
 }
-.mySelect .selected:focus + .selectReverse {
+.mySelect .selected:focus + * + .selectReverse {
 	top: 0;
 	outline: none;
 }
@@ -317,7 +317,7 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
-.mySelect.hover .selected:hover + .selectList {
+.mySelect.hover .selected:hover + * + .selectList {
 	display:block;
 }
 .mySelect.hover .selectList:hover {
