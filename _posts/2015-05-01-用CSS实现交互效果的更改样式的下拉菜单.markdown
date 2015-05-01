@@ -47,7 +47,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
         <div class="selected">
                 <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
-        <div class="selectList">
+        <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
         </div>
@@ -57,7 +57,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
         <div class="selected">
                 <span class="selectedTxt" >hover的选项菜单</span>
         </div>
-        <div class="selectList" >
+        <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
         </div>
@@ -183,6 +183,9 @@ overflow: auto;
 .mySelect.hover .selectList:hover {
 	display: block;
 }
+.mySelect.hover .selectList:focus {
+	display: none;
+}
 /*另外需要注意去掉overflow与max-height的限制*/
 ```
 
@@ -298,6 +301,9 @@ overflow: auto;
 .mySelect.hover .selectList:hover {
 	display: block;
 }
+.mySelect.hover .selectList:focus {
+	display: none;
+}
 </style>
 <div class="mySelect focus" style="width: 96px;">
         <div class="selected"  tabindex="0">
@@ -324,7 +330,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
-        <div class="selectList">
+        <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
         </div>
@@ -334,7 +340,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的选项菜单</span>
         </div>
-        <div class="selectList" >
+        <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
         </div>
