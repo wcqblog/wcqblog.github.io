@@ -346,7 +346,7 @@ overflow: auto;
     outline: none;
 }
 .mySelect.hover .selected:hover + .selectList {
-	display:block;
+	display:block !important;
 }
 .mySelect.hover .selectList:hover {
 	display: block;
