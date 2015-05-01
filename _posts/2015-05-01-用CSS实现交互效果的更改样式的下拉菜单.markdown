@@ -310,7 +310,7 @@ overflow: auto;
         
 </div>
 
-<div class="mySelect focus" style="width: 96px;">
+<div class="mySelect focus" >
         <div class="selected" tabindex="0">
                 <span class="selectedTxt" contentEditable="true">默认选项</span>
         </div>
