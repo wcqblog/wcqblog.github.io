@@ -22,32 +22,58 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 
 ```html
 <!--选项卡控件-->
-   <div class="mySelect" style="min-width: 96px;">
-                <div class="selected"  tabindex="0">
-                <span class="selectedTxt" >默认选项</span></div>
-                <ul class="selectList"  tabindex="0">
-                    <li class="option" data-value="" >选项的值</li>
-                    <li class="option" data-value="" >选项的值</li>
-                </ul>
-            </div>
-            <!--可以编辑的下拉菜单-->
-            <div class="mySelect" style="min-width: 96px;">
-                <div class="selected"  tabindex="0">
-                <span class="selectedTxt" contentEditable="true">默认选项</span></div>
-                <ul class="selectList"  tabindex="0">
-                    <li class="option" data-value="" >选项的值</li>
-                    <li class="option" data-value="" >选项的值</li>
-                </ul>
-            </div>
+<div class="mySelect focus" style="width: 96px;">
+        <div class="selected"  tabindex="0">
+                <span class="selectedTxt" >默认选项</span>
+        </div>
+        <div class="selectList"  tabindex="0">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
+
+<div class="mySelect focus" style="width: 96px;">
+        <div class="selected" tabindex="0">
+                <span class="selectedTxt" contentEditable="true">默认选项</span>
+        </div>
+        <div class="selectList" tabindex="0">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
+<div class="mySelect hover" style="min-width: 96px;">
+        <div class="selected">
+                <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
+        </div>
+        <div class="selectList">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
+<div class="mySelect hover" style="min-width: 96px;">
+        <div class="selected">
+                <span class="selectedTxt" >hover的选项菜单</span>
+        </div>
+        <div class="selectList" >
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
 ```
 
 ```css
 /*选项卡控件*/
-.mySelect {
-  display: block;
+  .mySelect {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom:180px;
   margin-right: 8px;
   position: relative;
-  float:left;
+ 
   height: 33px;
   line-height: 33px;
   width: auto;
@@ -88,11 +114,13 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
   float:left;
   margin-top: 8px;
   margin-left: -20px;
-    max-height: 350px;
-overflow: auto;
   width: calc(100% + 50px);
   box-shadow: 0 0 5px #aaa;
     transition: all ease-out .3s;
+}
+.mySelect.focus .selectList {
+max-height: 350px;
+overflow: auto;
 }
 .mySelect .selectList:before {
   content: "";
@@ -138,6 +166,12 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
+.mySelect.hover .selected:hover + .selectList {
+	display:block;
+}
+.mySelect.hover .selectList:hover {
+	display: block;
+}
 ```
 
 >当然，如果改成悬浮菜单也很容易。
@@ -149,6 +183,7 @@ overflow: auto;
 .mySelect.hover .selectList:hover {
 	display: block;
 }
+/*另外需要注意去掉overflow与max-height的限制*/
 ```
 
 不过有一点很蛋疼。。。就是当.selectList的最大高度受到限制，同时并存 min-height和overflow:auto/scroll的时候，.selectList 一旦hover上去就会消失掉。。还是很有意思的问题。。
@@ -205,11 +240,13 @@ overflow: auto;
   float:left;
   margin-top: 8px;
   margin-left: -20px;
-    max-height: 350px;
-overflow: auto;
   width: calc(100% + 50px);
   box-shadow: 0 0 5px #aaa;
     transition: all ease-out .3s;
+}
+.mySelect.focus .selectList {
+max-height: 350px;
+overflow: auto;
 }
 .mySelect .selectList:before {
   content: "";
@@ -262,7 +299,7 @@ overflow: auto;
 	display: block;
 }
 </style>
-<div class="mySelect" style="width: 96px;">
+<div class="mySelect focus" style="width: 96px;">
         <div class="selected"  tabindex="0">
                 <span class="selectedTxt" >默认选项</span>
         </div>
@@ -273,7 +310,7 @@ overflow: auto;
         
 </div>
 
-<div class="mySelect" style="width: 96px;">
+<div class="mySelect focus" style="width: 96px;">
         <div class="selected" tabindex="0">
                 <span class="selectedTxt" contentEditable="true">默认选项</span>
         </div>
@@ -283,11 +320,21 @@ overflow: auto;
         </div>
         
 </div>
-<div class="mySelect hover" style="width: 96px;">
+<div class="mySelect hover" style="min-width: 96px;">
         <div class="selected">
-                <span class="selectedTxt" >默认选项</span>
+                <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
         <div class="selectList">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
+<div class="mySelect hover" style="min-width: 96px;">
+        <div class="selected">
+                <span class="selectedTxt" >hover的选项菜单</span>
+        </div>
+        <div class="selectList" >
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
         </div>
