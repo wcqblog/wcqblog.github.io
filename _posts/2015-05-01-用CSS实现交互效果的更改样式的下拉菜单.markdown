@@ -9,7 +9,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ###最近去了CNZZ那边实习，正好赶上做一个项目，正式上班第一天就被拉过去切图了。。怀着忐忑的心情开始切。当现在已经比较熟悉了，就当纯粹玩了几天CSS，
 因为UI妹子给的图的效果，我们尽量就全部用CSS实现动效，所以就做了一系列的小控件，其实还蛮有意思。
 
-####控件1：改写的select控件，完全重写样式，点击下拉，点选后options消失，不借助js完成这些功能（选中修改值这些肯定还得js做啦~）
+####控件1：改写的select控件，完全重写样式，点击下拉，点选后options消失，不借助js完成这些功能（选中修改值这些肯定还得js做啦~）主要是利用元素的tabindex属性来实现人为添加focus点。
 
 用到的几个小技巧:利用focus来保存click后的状态，因为焦点是唯一的，所以可以利用这个特性实现“点select出现options,点选option后options消失”
 
@@ -143,10 +143,10 @@ overflow: auto;
 >当然，如果改成悬浮菜单也很容易。
 
 ```css
-.mySelect .selected:hover + .selectList {
+.mySelect.hover .selected:hover + .selectList {
 	display:block;
 }
-.mySelect .selectList:hover {
+.mySelect.hover .selectList:hover {
 	display: block;
 }
 ```
@@ -255,12 +255,39 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
+.mySelect.hover .selected:hover + .selectList {
+	display:block;
+}
+.mySelect.hover .selectList:hover {
+	display: block;
+}
 </style>
 <div class="mySelect" style="width: 96px;">
         <div class="selected"  tabindex="0">
                 <span class="selectedTxt" >默认选项</span>
         </div>
         <div class="selectList"  tabindex="0">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
+
+<div class="mySelect" style="width: 96px;">
+        <div class="selected" tabindex="0">
+                <span class="selectedTxt" contentEditable="true">默认选项</span>
+        </div>
+        <div class="selectList" tabindex="0">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
+        
+</div>
+<div class="mySelect hover" style="width: 96px;">
+        <div class="selected">
+                <span class="selectedTxt" >默认选项</span>
+        </div>
+        <div class="selectList">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
         </div>
