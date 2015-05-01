@@ -154,7 +154,7 @@ overflow: auto;
 .mySelect .selected:focus + * + .selectList{
   display: block;
 }
-.mySelect .selected:focus + * + .selectReverse {
+.mySelect .selected:focus + .selectReverse {
 	top: 0;
 	outline: none;
 }
@@ -308,7 +308,7 @@ overflow: auto;
 .mySelect .selected:focus + * + .selectList{
   display: block;
 }
-.mySelect .selected:focus + * + .selectReverse {
+.mySelect .selected:focus + .selectReverse {
 	top: 0;
 	outline: none;
 }
