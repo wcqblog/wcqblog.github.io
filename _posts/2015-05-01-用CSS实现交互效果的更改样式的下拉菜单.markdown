@@ -1,0 +1,266 @@
+---
+layout: post
+title:  "几个用CSS画的小控件"
+date:   2015-05-01 12:10:00
+categories: 前端 CSS 
+tags: Webfrontend 
+image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
+---
+###最近去了CNZZ那边实习，正好赶上做一个项目，正式上班第一天就被拉过去切图了。。怀着忐忑的心情开始切。当现在已经比较熟悉了，就当纯粹玩了几天CSS，
+因为UI妹子给的图的效果，我们尽量就全部用CSS实现动效，所以就做了一系列的小控件，其实还蛮有意思。
+
+####控件1：改写的select控件，完全重写样式，点击下拉，点选后options消失，不借助js完成这些功能（选中修改值这些肯定还得js做啦~）
+
+用到的几个小技巧:利用focus来保存click后的状态，因为焦点是唯一的，所以可以利用这个特性实现“点select出现options,点选option后options消失”
+
+用border画三角这种烂大街的技巧就不用说了吧。。
+
+遇到的小问题，一个元素outline会带上他的伪元素一起。很怪异。。。不知道怎么去掉。。
+
+```html
+<!--选项卡控件-->
+   <div class="mySelect" style="min-width: 96px;">
+                <div class="selected"  tabindex="0"><span class="selectedTxt" >默认选项</span></div>
+                <ul class="selectList"  tabindex="0">
+                    <li class="option" data-value="" >选项的值</li>
+                    <li class="option" data-value="" >选项的值</li>
+                </ul>
+            </div>
+            <!--可以编辑的下拉菜单-->
+            <div class="mySelect" style="min-width: 96px;">
+                <div class="selected"  tabindex="0"><span class="selectedTxt" contentEditable="true">默认选项</span></div>
+                <ul class="selectList"  tabindex="0">
+                    <li class="option" data-value="" >选项的值</li>
+                    <li class="option" data-value="" >选项的值</li>
+                </ul>
+            </div>
+```
+
+```css
+/*选项卡控件*/
+.mySelect {
+  display: block;
+  margin-right: 8px;
+  position: relative;
+  float:left;
+  height: 33px;
+  line-height: 33px;
+  width: auto;
+  padding-left:20px;
+  padding-right: 30px;
+  border-radius: 20px;
+  border: 1px solid #838f93;
+  font-size: 14px;
+  /*overflow: hidden;*/
+  color: #323b3d;
+  z-index: 500;
+    transition: all ease-out .3s;
+    cursor: pointer;
+}
+.mySelect .selected {
+    min-width: 1px;
+    min-height: 100%;
+}
+.mySelect .selectedTxt:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    outline: none;
+    /* position: absolute; */
+    float: right;
+    margin-right: -18px;
+    margin-top: 14px;
+    border-top: 6px solid #616e72;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+.mySelect:hover {
+  border-color: #6093E4;
+}
+.mySelect .selectList {
+  display: none;
+  float:left;
+  margin-top: 8px;
+  margin-left: -20px;
+    max-height: 350px;
+overflow: auto;
+  width: calc(100% + 50px);
+  box-shadow: 0 0 5px #aaa;
+    transition: all ease-out .3s;
+}
+.mySelect .selectList:before {
+  content: "";
+  float:left;
+  height: 10px;
+  margin-top: -10px;
+  margin-left: -20px;
+  width: calc(100% + 50px);
+}
+.mySelect:focus,
+.mySelect .selected,
+.mySelect .option,
+.mySelect .selectList{
+    outline: none;
+}
+
+.mySelect .selectList:focus {
+    display: none;
+}
+.mySelect .selected:focus + .selectList{
+  display: block;
+}
+/*.mySelect .selectList:hover {*/
+  /*display: block;*/
+/*}*/
+
+.mySelect .selectList .option {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  line-height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+    transition: all ease-out .3s;
+}
+.mySelect .selectList .option:hover {
+  background-color: #f2f7fe;
+}
+.mySelect .selectedTxt[contenteditable="true"] {
+    color: #909A9C;
+}
+.mySelect .selectedTxt[contenteditable="true"]:focus:after {
+    outline: none;
+}
+```
+
+>当然，如果改成悬浮菜单也很容易。
+
+```css
+.mySelect .selected:hover + .selectList {
+	display:block;
+}
+.mySelect .selectList:hover {
+	display: block;
+}
+```
+
+不过有一点很蛋疼。。。就是当.selectList的最大高度受到限制，同时并存 min-height和overflow:auto/scroll的时候，.selectList 一旦hover上去就会消失掉。。还是很有意思的问题。。
+
+另外，学到一点就是select不能直接设置高度，而是需要通过padding 去撑开。
+
+想起来再更吧。。太累了，先洗洗睡了
+
+<style>
+  .mySelect {
+  display: block;
+  margin-right: 8px;
+  position: relative;
+  float:left;
+  height: 33px;
+  line-height: 33px;
+  width: auto;
+  padding-left:20px;
+  padding-right: 30px;
+  border-radius: 20px;
+  border: 1px solid #838f93;
+  font-size: 14px;
+  /*overflow: hidden;*/
+  color: #323b3d;
+  z-index: 500;
+    transition: all ease-out .3s;
+    cursor: pointer;
+}
+.mySelect .selected {
+    min-width: 1px;
+    min-height: 100%;
+}
+.mySelect .selectedTxt:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    outline: none;
+    /* position: absolute; */
+    float: right;
+    margin-right: -18px;
+    margin-top: 14px;
+    border-top: 6px solid #616e72;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+.mySelect:hover {
+  border-color: #6093E4;
+}
+.mySelect .selectList {
+  display: none;
+  float:left;
+  margin-top: 8px;
+  margin-left: -20px;
+    max-height: 350px;
+overflow: auto;
+  width: calc(100% + 50px);
+  box-shadow: 0 0 5px #aaa;
+    transition: all ease-out .3s;
+}
+.mySelect .selectList:before {
+  content: "";
+  float:left;
+  height: 10px;
+  margin-top: -10px;
+  margin-left: -20px;
+  width: calc(100% + 50px);
+}
+.mySelect:focus,
+.mySelect .selected,
+.mySelect .option,
+.mySelect .selectList{
+    outline: none;
+}
+
+.mySelect .selectList:focus {
+    display: none;
+}
+.mySelect .selected:focus + .selectList{
+  display: block;
+}
+/*.mySelect .selectList:hover {*/
+  /*display: block;*/
+/*}*/
+
+.mySelect .selectList .option {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  line-height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+    transition: all ease-out .3s;
+}
+.mySelect .selectList .option:hover {
+  background-color: #f2f7fe;
+}
+.mySelect .selectedTxt[contenteditable="true"] {
+    color: #909A9C;
+}
+.mySelect .selectedTxt[contenteditable="true"]:focus:after {
+    outline: none;
+}
+</style>
+<div class="mySelect" style="min-width: 96px;">
+                <div class="selected"  tabindex="0"><span class="selectedTxt" >默认选项</span></div>
+                <ul class="selectList"  tabindex="0">
+                    <li class="option" data-value="" >选项的值</li>
+                    <li class="option" data-value="" >选项的值</li>
+                </ul>
+            </div>
+            <!--可以编辑的下拉菜单-->
+            <div class="mySelect" style="min-width: 96px;">
+                <div class="selected"  tabindex="0"><span class="selectedTxt" contentEditable="true">默认选项</span></div>
+                <ul class="selectList"  tabindex="0">
+                    <li class="option" data-value="" >选项的值</li>
+                    <li class="option" data-value="" >选项的值</li>
+                </ul>
+            </div>
