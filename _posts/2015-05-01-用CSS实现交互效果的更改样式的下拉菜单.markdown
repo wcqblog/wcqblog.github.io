@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "几个用CSS画的小控件"
+title:  "用CSS实现交互效果的更改样式的下拉菜单"
 date:   2015-05-01 12:10:00
 categories: 前端 CSS 
 tags: Webfrontend 
@@ -20,7 +20,8 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ```html
 <!--选项卡控件-->
    <div class="mySelect" style="min-width: 96px;">
-                <div class="selected"  tabindex="0"><span class="selectedTxt" >默认选项</span></div>
+                <div class="selected"  tabindex="0">
+                <span class="selectedTxt" >默认选项</span></div>
                 <ul class="selectList"  tabindex="0">
                     <li class="option" data-value="" >选项的值</li>
                     <li class="option" data-value="" >选项的值</li>
@@ -28,7 +29,8 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
             </div>
             <!--可以编辑的下拉菜单-->
             <div class="mySelect" style="min-width: 96px;">
-                <div class="selected"  tabindex="0"><span class="selectedTxt" contentEditable="true">默认选项</span></div>
+                <div class="selected"  tabindex="0">
+                <span class="selectedTxt" contentEditable="true">默认选项</span></div>
                 <ul class="selectList"  tabindex="0">
                     <li class="option" data-value="" >选项的值</li>
                     <li class="option" data-value="" >选项的值</li>
@@ -154,10 +156,12 @@ overflow: auto;
 
 <style>
   .mySelect {
-  display: block;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom:180px;
   margin-right: 8px;
   position: relative;
-  float:left;
+ 
   height: 33px;
   line-height: 33px;
   width: auto;
@@ -249,16 +253,18 @@ overflow: auto;
     outline: none;
 }
 </style>
-<div class="mySelect" style="min-width: 96px;">
-                <div class="selected"  tabindex="0"><span class="selectedTxt" >默认选项</span></div>
+<div class="mySelect" style="width: 96px;">
+                <div class="selected"  tabindex="0">
+                <span class="selectedTxt" >默认选项</span></div>
                 <ul class="selectList"  tabindex="0">
                     <li class="option" data-value="" >选项的值</li>
                     <li class="option" data-value="" >选项的值</li>
                 </ul>
             </div>
-            <!--可以编辑的下拉菜单-->
-            <div class="mySelect" style="min-width: 96px;">
-                <div class="selected"  tabindex="0"><span class="selectedTxt" contentEditable="true">默认选项</span></div>
+            
+            <div class="mySelect" style="width: 96px;">
+                <div class="selected"  tabindex="0">
+                <span class="selectedTxt" contentEditable="true">默认选项</span></div>
                 <ul class="selectList"  tabindex="0">
                     <li class="option" data-value="" >选项的值</li>
                     <li class="option" data-value="" >选项的值</li>
