@@ -265,13 +265,35 @@ overflow: auto;
 .mySelect .selectList{
     outline: none;
 }
-
+.mySelect .selectedReverse{
+	display:block;
+	position:absolute;
+	width:100%;
+	height: inherit;
+	top: -100%;
+	left:0;
+	z-index: 10086;
+	background: transparent;
+	outline:none;
+}
 .mySelect .selectList:focus {
     display: none;
 }
+
 .mySelect .selected:focus + .selectList{
   display: block;
 }
+.mySelect .selected:focus + .selectReverse {
+	top: 0;
+	outline: none;
+}
+.mySelect .slectedReverse:focus + .selectList {
+	disply:none;
+}
+.mySelect .slectedReverse:focus {
+	top: -100%;
+}
+
 /*.mySelect .selectList:hover {*/
   /*display: block;*/
 /*}*/
@@ -309,6 +331,7 @@ overflow: auto;
         <div class="selected"  tabindex="0">
                 <span class="selectedTxt" >默认选项</span>
         </div>
+        <div class="slectedReverse" tabindex="0"></div>
         <div class="selectList"  tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -320,6 +343,7 @@ overflow: auto;
         <div class="selected" tabindex="0">
                 <span class="selectedTxt" contentEditable="true">默认选项</span>
         </div>
+        <div class="slectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -330,6 +354,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
+        <div class="slectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -340,6 +365,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的选项菜单</span>
         </div>
+        <div class="slectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
