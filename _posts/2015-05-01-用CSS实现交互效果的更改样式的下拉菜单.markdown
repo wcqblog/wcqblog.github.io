@@ -344,7 +344,7 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
-.mySelect.hover .selected:hover + * + .selectList {
+.mySelect.hover .selected:hover + .selectList {
 	display:block;
 }
 .mySelect.hover .selectList:hover {
@@ -382,7 +382,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
-        <div class="selectedReverse" tabindex="0"></div>
+        <!--<div class="selectedReverse" tabindex="0"></div>-->
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -393,7 +393,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的选项菜单</span>
         </div>
-        <div class="selectedReverse" tabindex="0"></div>
+        <!--<div class="selectedReverse" tabindex="0"></div>-->
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
