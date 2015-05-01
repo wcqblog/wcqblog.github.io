@@ -67,7 +67,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 
 ```css
 /*选项卡控件*/
-.mySelect {
+  .mySelect {
   display: inline-block;
   vertical-align: bottom;
   margin-bottom:80px;
@@ -154,10 +154,11 @@ overflow: auto;
 .mySelect .selected:focus + * + .selectList{
   display: block;
 }
-.mySelect .selected:focus + .selectReverse {
+.mySelect .selected:focus + .selectedReverse {
 	top: 0;
 	outline: none;
 }
+
 .mySelect .selectedReverse:focus + .selectList {
 	disply:none !important;
 }
@@ -342,10 +343,6 @@ overflow: auto;
 }
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
-}
-.mySelect.hover .selected:hover + .selectedReverse {
-	top: 0;
-	outline: none;
 }
 .mySelect.hover .selected:hover + * + .selectList {
 	display:block;
