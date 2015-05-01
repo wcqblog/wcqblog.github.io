@@ -26,6 +26,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
         <div class="selected"  tabindex="0">
                 <span class="selectedTxt" >默认选项</span>
         </div>
+        <div class="selectedReverse" tabindex="0"></div>
         <div class="selectList"  tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -33,10 +34,11 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
         
 </div>
 
-<div class="mySelect focus" style="width: 96px;">
+<div class="mySelect focus" >
         <div class="selected" tabindex="0">
                 <span class="selectedTxt" contentEditable="true">默认选项</span>
         </div>
+        <div class="selectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -47,6 +49,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
         <div class="selected">
                 <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
+        <!--<div class="selectedReverse" tabindex="0"></div>-->
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -57,6 +60,7 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
         <div class="selected">
                 <span class="selectedTxt" >hover的选项菜单</span>
         </div>
+        <!--<div class="selectedReverse" tabindex="0"></div>-->
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -120,7 +124,8 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 }
 .mySelect.focus .selectList {
 max-height: 350px;
-overflow: auto;
+overflow-y: auto;
+overflow-x: hidden;
 }
 .mySelect .selectList:before {
   content: "";
@@ -154,6 +159,7 @@ overflow: auto;
 .mySelect .selected:focus + * + .selectList{
   display: block;
 }
+
 .mySelect .selected:focus + .selectedReverse {
 	top: 0;
 	outline: none;
@@ -189,8 +195,8 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
-.mySelect.hover .selected:hover + * + .selectList {
-	display:block;
+.mySelect.hover .selected:hover + .selectList {
+	display:block !important;
 }
 .mySelect.hover .selectList:hover {
 	display: block;
@@ -275,7 +281,8 @@ overflow: auto;
 }
 .mySelect.focus .selectList {
 max-height: 350px;
-overflow: auto;
+overflow-y: auto;
+overflow-x: hidden;
 }
 .mySelect .selectList:before {
   content: "";
