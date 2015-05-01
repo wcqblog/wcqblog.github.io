@@ -17,6 +17,9 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 
 遇到的小问题，一个元素outline会带上他的伪元素一起。很怪异。。。不知道怎么去掉。。
 
+####不过需要先reset一下
+
+
 ```html
 <!--选项卡控件-->
    <div class="mySelect" style="min-width: 96px;">
@@ -257,10 +260,10 @@ overflow: auto;
         <div class="selected"  tabindex="0">
                 <span class="selectedTxt" >默认选项</span>
         </div>
-        <ul class="selectList"  tabindex="0">
-                <li class="option" data-value="" >选项的值</li>
-                <li class="option" data-value="" >选项的值</li>    
-        </ul>
+        <div class="selectList"  tabindex="0">
+                <div class="option" data-value="" >选项的值</div>
+                <div class="option" data-value="" >选项的值</div>    
+        </div>
         
 </div>
             
