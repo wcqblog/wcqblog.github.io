@@ -67,10 +67,10 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 
 ```css
 /*选项卡控件*/
-  .mySelect {
+.mySelect {
   display: inline-block;
   vertical-align: bottom;
-  margin-bottom:180px;
+  margin-bottom:80px;
   margin-right: 8px;
   position: relative;
  
@@ -136,13 +136,35 @@ overflow: auto;
 .mySelect .selectList{
     outline: none;
 }
-
+.mySelect .selectedReverse{
+	display:block;
+	position:absolute;
+	width:100%;
+	height: inherit;
+	top: -100%;
+	left:0;
+	z-index: 10086;
+	background: transparent;
+	outline:none;
+}
 .mySelect .selectList:focus {
     display: none;
 }
-.mySelect .selected:focus + .selectList{
+
+.mySelect .selected:focus + * + .selectList{
   display: block;
 }
+.mySelect .selected:focus + * + .selectReverse {
+	top: 0;
+	outline: none;
+}
+.mySelect .selectedReverse:focus + .selectList {
+	disply:none !important;
+}
+.mySelect .selectedReverse:focus {
+	top: -100%;
+}
+
 /*.mySelect .selectList:hover {*/
   /*display: block;*/
 /*}*/
@@ -166,11 +188,14 @@ overflow: auto;
 .mySelect .selectedTxt[contenteditable="true"]:focus:after {
     outline: none;
 }
-.mySelect.hover .selected:hover + .selectList {
+.mySelect.hover .selected:hover + * + .selectList {
 	display:block;
 }
 .mySelect.hover .selectList:hover {
 	display: block;
+}
+.mySelect.hover .selectList:focus {
+	display: none;
 }
 ```
 
@@ -287,10 +312,10 @@ overflow: auto;
 	top: 0;
 	outline: none;
 }
-.mySelect .slectedReverse:focus + .selectList {
-	disply:none;
+.mySelect .selectedReverse:focus + .selectList {
+	disply:none !important;
 }
-.mySelect .slectedReverse:focus {
+.mySelect .selectedReverse:focus {
 	top: -100%;
 }
 
@@ -331,7 +356,7 @@ overflow: auto;
         <div class="selected"  tabindex="0">
                 <span class="selectedTxt" >默认选项</span>
         </div>
-        <div class="slectedReverse" tabindex="0"></div>
+        <div class="selectedReverse" tabindex="0"></div>
         <div class="selectList"  tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -343,7 +368,7 @@ overflow: auto;
         <div class="selected" tabindex="0">
                 <span class="selectedTxt" contentEditable="true">默认选项</span>
         </div>
-        <div class="slectedReverse" tabindex="0"></div>
+        <div class="selectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -354,7 +379,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的，不过如果下拉菜单有最大高度限制和overflow时hover会失灵</span>
         </div>
-        <div class="slectedReverse" tabindex="0"></div>
+        <div class="selectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
@@ -365,7 +390,7 @@ overflow: auto;
         <div class="selected">
                 <span class="selectedTxt" >hover的选项菜单</span>
         </div>
-        <div class="slectedReverse" tabindex="0"></div>
+        <div class="selectedReverse" tabindex="0"></div>
         <div class="selectList" tabindex="0">
                 <div class="option" data-value="" >选项的值</div>
                 <div class="option" data-value="" >选项的值</div>    
