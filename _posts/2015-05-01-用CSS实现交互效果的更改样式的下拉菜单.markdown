@@ -254,19 +254,13 @@ overflow: auto;
 }
 </style>
 <div class="mySelect" style="width: 96px;">
-                <div class="selected"  tabindex="0">
-                <span class="selectedTxt" >默认选项</span></div>
-                <ul class="selectList"  tabindex="0">
-                    <li class="option" data-value="" >选项的值</li>
-                    <li class="option" data-value="" >选项的值</li>
-                </ul>
-            </div>
+        <div class="selected"  tabindex="0">
+                <span class="selectedTxt" >默认选项</span>
+        </div>
+        <ul class="selectList"  tabindex="0">
+                <li class="option" data-value="" >选项的值</li>
+                <li class="option" data-value="" >选项的值</li>    
+        </ul>
+        
+</div>
             
-            <div class="mySelect" style="width: 96px;">
-                <div class="selected"  tabindex="0">
-                <span class="selectedTxt" contentEditable="true">默认选项</span></div>
-                <ul class="selectList"  tabindex="0">
-                    <li class="option" data-value="" >选项的值</li>
-                    <li class="option" data-value="" >选项的值</li>
-                </ul>
-            </div>
