@@ -196,7 +196,7 @@ overflow: auto;
   .mySelect {
   display: inline-block;
   vertical-align: bottom;
-  margin-bottom:180px;
+  margin-bottom:80px;
   margin-right: 8px;
   position: relative;
  
