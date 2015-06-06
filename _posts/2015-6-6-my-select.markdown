@@ -119,6 +119,8 @@ image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ```
 
 原生的js
+
+
 ```javascript
   
 (function(){
