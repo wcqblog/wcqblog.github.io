@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "angularjs的指令directive 1"
+title:  "angularjs的指令directive 2 动态插入指令"
 date:   2015-08-06 23:38:00
 categories: Angular directive $compile
 tags: Webfrontend 
 image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
 
-###Angularjs创建嵌套的控件的不优雅方法之 $compile
+###Angularjs动态插入directive的不优雅方法之 $compile
 
 对的，我想过很多遍，如果我要写一个tab页这种指令，我该怎么搞!
 如果有很多动态插入的元素该怎么办？
