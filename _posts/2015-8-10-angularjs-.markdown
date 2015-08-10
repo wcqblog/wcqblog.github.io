@@ -141,6 +141,8 @@ app.directive('uploader', function () {
 ```
 
 样式表
+
+
 ```css
 /* line 4, ../../scss/utils/imgUploader.scss */
 .my-uploader {
@@ -222,6 +224,88 @@ app.directive('uploader', function () {
 .upload-result .img-preview .thumbnail {
   width: 100px;
 }
+
+
+```
+
+```scss
+$upload-btn-width: 90px;
+$upload-btn-height: 37px;
+$upload-btn-bg-color: #5bc0de;
+.my-uploader{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  .upload-wrapper{
+    display: block;
+    float: left;
+    width: $upload-btn-width;
+    height: $upload-btn-height;
+    cursor: pointer;
+    .upload-btn{
+      display: block;
+      position: absolute;
+      margin-left: 15px;
+      top:0;
+      left: 0;
+    }
+    input[type='file'] {
+      display: block;
+      position: absolute;
+      padding: 20px;
+      opacity: 0;
+      top:0;
+      left: 0;
+      z-index: 200;
+      width: inherit;
+      height: inherit;
+      box-sizing: border-box;
+      cursor: pointer;
+
+    }
+    &:hover {
+      .upload-btn{
+        background-color: darken($upload-btn-bg-color, 20);
+      }
+    }
+
+  }
+  .upload-content{
+    display: block;
+    float: left;
+    line-height: $upload-btn-height;
+    margin-left: 15px;
+
+  }
+
+
+}
+.upload-result{
+  margin-top:50px;
+  .img-preview{
+    margin: 10px 0;
+    .info{
+      float: left;
+      &:first-child{
+        width: 25%;
+      }
+      &:nth-child(2),
+      &:nth-child(3){
+        width: 28%;
+      }
+      &:last-child {
+        width: 15%;
+      }
+      span{
+        word-break: break-all;
+      }
+    }
+    .thumbnail{
+      width: 100px;
+    }
+  }
+}
+
 
 
 ```
