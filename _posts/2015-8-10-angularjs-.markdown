@@ -141,84 +141,87 @@ app.directive('uploader', function () {
 ```
 
 样式表
-```scss
-	$upload-btn-width: 90px;
-$upload-btn-height: 37px;
-$upload-btn-bg-color: #5bc0de;
-.my-uploader{
+```css
+/* line 4, ../../scss/utils/imgUploader.scss */
+.my-uploader {
   overflow: hidden;
   width: 100%;
   height: auto;
-  .upload-wrapper{
-    display: block;
-    float: left;
-    width: $upload-btn-width;
-    height: $upload-btn-height;
-    cursor: pointer;
-    .upload-btn{
-      display: block;
-      position: absolute;
-      margin-left: 15px;
-      top:0;
-      left: 0;
-    }
-    input[type='file'] {
-      display: block;
-      position: absolute;
-      padding: 20px;
-      opacity: 0;
-      top:0;
-      left: 0;
-      z-index: 200;
-      width: inherit;
-      height: inherit;
-      box-sizing: border-box;
-      cursor: pointer;
-
-    }
-    &:hover {
-      .upload-btn{
-        background-color: darken($upload-btn-bg-color, 20);
-      }
-    }
-
-  }
-  .upload-content{
-    display: block;
-    float: left;
-    line-height: $upload-btn-height;
-    margin-left: 15px;
-
-  }
-
-
 }
-.upload-result{
-  margin-top:50px;
-  .img-preview{
-    margin: 10px 0;
-    .info{
-      float: left;
-      &:first-child{
-        width: 25%;
-      }
-      &:nth-child(2),
-      &:nth-child(3){
-        width: 28%;
-      }
-      &:last-child {
-        width: 15%;
-      }
-      span{
-        word-break: break-all;
-      }
-    }
-    .thumbnail{
-      width: 100px;
-    }
-  }
+/* line 8, ../../scss/utils/imgUploader.scss */
+.my-uploader .upload-wrapper {
+  display: block;
+  float: left;
+  width: 90px;
+  height: 37px;
+  cursor: pointer;
+}
+/* line 14, ../../scss/utils/imgUploader.scss */
+.my-uploader .upload-wrapper .upload-btn {
+  display: block;
+  position: absolute;
+  margin-left: 15px;
+  top: 0;
+  left: 0;
+}
+/* line 21, ../../scss/utils/imgUploader.scss */
+.my-uploader .upload-wrapper input[type='file'] {
+  display: block;
+  position: absolute;
+  padding: 20px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: inherit;
+  height: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+/* line 36, ../../scss/utils/imgUploader.scss */
+.my-uploader .upload-wrapper:hover .upload-btn {
+  background-color: #2390b0;
+}
+/* line 42, ../../scss/utils/imgUploader.scss */
+.my-uploader .upload-content {
+  display: block;
+  float: left;
+  line-height: 37px;
+  margin-left: 15px;
 }
 
+/* line 52, ../../scss/utils/imgUploader.scss */
+.upload-result {
+  margin-top: 50px;
+}
+/* line 54, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview {
+  margin: 10px 0;
+}
+/* line 56, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview .info {
+  float: left;
+}
+/* line 58, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview .info:first-child {
+  width: 25%;
+}
+/* line 61, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview .info:nth-child(2), .upload-result .img-preview .info:nth-child(3) {
+  width: 28%;
+}
+/* line 65, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview .info:last-child {
+  width: 15%;
+}
+/* line 68, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview .info span {
+  word-break: break-all;
+}
+/* line 72, ../../scss/utils/imgUploader.scss */
+.upload-result .img-preview .thumbnail {
+  width: 100px;
+}
 
 
 ```
