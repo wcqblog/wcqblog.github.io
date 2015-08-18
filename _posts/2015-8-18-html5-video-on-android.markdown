@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "angularjs的指令directive 2 多文件上传"
+title:  "html5 video for android"
 date:   2015-08-18 23:00:00
 categories: Angular directive FileReader 坑...
 tags: Webfrontend
