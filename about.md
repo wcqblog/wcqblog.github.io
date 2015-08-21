@@ -42,7 +42,7 @@ image: /assets/images/background_image.jpg
   
   8. 在阿里妈妈参与前端开发。[Oplus项目的主力切图仔](http://wifi.cnzz.com)
   
-  9. 一个正在建设中的小网站，主力前端仔，页面构建，技术设计，交互处理。[星云](http://www.nebulafe.com)
+  9. 一个正在建设中的网站，主力前端仔(首席前端工程师！)，负责页面构建，技术设计，工作流设计，以及部分UI和交互处理。[星云网](http://www.nebulafe.com)
 
   10. 开发过移动端的展示页面、响应式页面[Oplus项目主页](http://wifi.cnzz.com),对于H5页面(产品这么说我就这么叫吧)有一定了解，对于性能、动画、workflow调优小有心得
  
