@@ -2,7 +2,7 @@
 layout: post
 title:  "html5 video for android"
 date:   2015-08-18 23:00:00
-categories: Angular directive FileReader 坑...
+categories: HTML5 Video Android 视频编码
 tags: Webfrontend
 image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
