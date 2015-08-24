@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "angularjs的指令directive 2 动态插入指令"
+title:  "IE8-伪元素不生效的问题"
 date:   2015-08-24 15:39:00
 categories: IE8 CSS 兼容性 伪元素
 tags: Webfrontend 
