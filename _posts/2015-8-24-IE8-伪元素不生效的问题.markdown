@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "angularjs的指令directive 2 动态插入指令"
+date:   2015-08-24 15:39:00
+categories: IE8 CSS 兼容性 伪元素
+tags: Webfrontend 
+image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
+---
+
+IE8 下的`::before` 和`::after`伪元素不生效，这什么情况呢？
+原因就是..
+
+`::before`和`::after`的两个冒号的写法不被IE8支持，需要切换成一个冒号的写法...
+蛋疼啊..
