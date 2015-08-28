@@ -31,26 +31,29 @@ gitHub账号
   
   1. 一个基于jquery的可拖拽的绝对定位响应式瀑布流布局的笔记web app（所有前端，部分django）不好意思它躺在github上。[链接](https://github.com/songziming/hippocampus/)
   
-  2. 一个简单地展示型电商网站 (所有前端，部分PHP) [思唯特](http://www.swdown.com/)
+  2. 我的个人主页（响应式 + 设计+ 实现 + P图） [链接](http://wungcq.github.io/)
   
-  3. 我的个人主页（响应式 + 设计+ 实现 + P图） [链接](http://wungcq.github.io/)
-  
-  4. 课程设计 一个医院预约系统，ROR后端，coffee + commonJS 开发(所有前端，部分后端，参与文档)  [HotReg](https://github.com/wanzysky/HotReg/)
+  3. 课程设计 一个医院预约系统，ROR后端，coffee + commonJS 开发(所有前端，部分后端，参与文档)  [HotReg](https://github.com/wanzysky/HotReg/)
 
-  5. 特准客广告投放管理系统 部分组件（组件开发+bootstrap主题修改）
+  4. 特准客广告投放管理系统 部分组件（组件开发+bootstrap主题修改）
  
-  6. 一个路由小插件[jRouter](https://github.com/WunGCQ/jRouter)
+  5. 一个路由小插件[jRouter](https://github.com/WunGCQ/jRouter)
   
-  7. 北航的智慧校园重构项目，开发组件为主，基本没有外部依赖。演示地址: [功能页，周历组件，日程，瀑布流，滚动条控件](http://wungcq.github.io/static/templates/index.html)  ,  [登陆页，视频背景,卡片切换](http://wungcq.github.io/static/templates/login.html)
-  
-  8. 在阿里妈妈参与前端开发。[Oplus项目的主力切图仔](http://wifi.cnzz.com)
-  
-  9. 一个正在建设中的网站，主力前端仔(首席前端工程师！)，负责页面构建，技术设计，工作流设计，以及部分UI和交互处理。[星云网](http://www.nebulafe.com)
+  6. 一个小而复杂的企业内部邮件处理系统，这其实是个大作业，七天rush出来的，使用了gulp构建，我负责了技术的架构以及所有前端开发，是一个较大型的单页web应用，逻辑真心挺复杂的...[webmail](https://github.com/songziming/webmail)
 
-  10. 开发过移动端的展示页面、响应式页面[Oplus项目主页](http://wifi.cnzz.com),对于H5页面(产品这么说我就这么叫吧)有一定了解，对于性能、动画、workflow调优小有心得
- 
-  11. 北航中法工程师学院的网站，前端页面开发，交互设计，node.js的部分全栈式开发，以及window Server上的nginx+node+mongo部署[北航中法新闻网站](http://ecpkn.buaa.edu.cn:9000/)
+  6. 北航的智慧校园重构项目，开发组件为主，出于挑战自己的心态基本全用的原生JS撸的，后期估计会改成AngularJS或者react。演示地址: [功能页，周历组件，日程，瀑布流，滚动条控件](http://wungcq.github.io/static/templates/index.html)  ,  [登陆页，视频背景,卡片切换](http://wungcq.github.io/static/templates/login.html)
   
-  12. 最近在项目中实践前端工程师驱动的组件化设计到开发，使用Angular进行模块组织，配合Compass和Gulp实现开发阶段的代码合并整理，在Angualr无需触达的轻度js的前端业务中采用ejs+underscore实现前后端组件模板复用，并且探索使用node+handelbars来实现伪线上环境的php+smarty的本地开发环境搭建。(都是利用了他们语法相似度高，修改成本小的特征)
+  7. 在阿里巴巴数据与产品部-CNZZ参与前端开发。[Oplus项目的主力UED,组件开发,PC向移动样式过渡的改造工作](http://wifi.cnzz.com)
+  
+  8. 一个正在建设中的网站，主力前端仔(首席前端工程师！)，负责页面构建，技术设计，工作流设计，以及部分UI和交互处理。[星云网](http://www.nebulafe.com)
+
+  9. 开发过移动端的展示页面、响应式页面[Oplus项目主页](http://wifi.cnzz.com),对于H5页面(产品这么说我就这么叫吧)有一定了解，对于性能、动画、workflow调优小有心得
+ 
+  10. 北航中法工程师学院的网站，前端页面开发，交互设计，node.js的部分全栈式开发，以及window Server上的nginx+node+mongo部署[北航中法新闻网站](http://ecpkn.buaa.edu.cn:9000/)
+  
+  11. 在组内发起的开发流程的前期优化，与UI和产品从需求到设计上推动组件化、规范化、配置化的开发方式，UI设计师参与从gitLab上的SCSS样式表配置管理和设计稿、视觉规范的更新，使得开发过程的脉络清晰，资源共享，方便交流，取得了一定成效。
+  
+  12. 为北航校园助手-“同袍”APP(目前Android版还在内测)开发了核心组件: webview内嵌的H5课程表，上线之后受到很多好评，媲美原生的用户体验，丝般顺滑，很多小伙伴用了之后已经卸载超级课程表、课程格子啦~
+  
 
   
