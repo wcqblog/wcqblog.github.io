@@ -20,7 +20,7 @@ gitHub账号
 在新浪微博
  [@WunGCQ](http://weibo.com/wangchunqi)
  
- 简历(貌似挺久没更新了...抽空更新一发)
+ 我的简历~
   [点击查看](http://wungcq.github.io/img/wangchunqi-web-frontend.pdf)
   
 技能点：
