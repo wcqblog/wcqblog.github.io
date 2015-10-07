@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "html5 video 的resize 与 orientationchange"
+title:  "html5 移动端 的resize 与 orientationchange"
 date:   2015-10-08 00:01:04
-categories: HTML5 Video 旋转 resize
+categories: HTML5 旋转 resize orientationchange
 tags: Webfrontend
 image: /assets/article_images/2015-01-25-webgl-shader/plexus.jpg
 ---
 
 
-####html5 video 的resize 与 orientationchange
+####html5 移动端 的resize 与 orientationchange
 
-这一阵子又搞html5 的video，发现很多有意思的问题，有一个问题很有趣
+这一阵子又搞html5 的移动端video，发现很多有意思的问题，有一个问题很有趣
 
 当我真机调试的时候，我特意观察了一下resize事件 和 orientationchange事件，结果发现，他们的调用顺序很有意思
 safari上是 物理旋转 -> 触发 onresize -> 触发 onorientationchange 
